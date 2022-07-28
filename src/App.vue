@@ -20,6 +20,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/scss/style.scss'
+@import './assets/scss/style.scss';
+
+#app {
+  height: 100vh;
+}
 </style>
 

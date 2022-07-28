@@ -1,12 +1,15 @@
 <template>
     <header>
-        <img src="../assets/img/dc-logo.png" alt="DC">
-        <nav>
-            <ul>
-                <li v-for="(object, index) in this.navmenu" :key="index"><a :href="object.url">{{ object.text }}</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container wrapper">
+            <img src="../assets/img/dc-logo.png" alt="DC">
+            <nav>
+                <ul>
+                    <li v-for="(object, index) in this.navmenu" :key="index"><a :href="object.url">{{ object.text }}</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 </template>
 
@@ -76,11 +79,9 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    height: 10%;
+    height: 15%;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem;
 
     img {
         padding: 1rem;
@@ -88,6 +89,13 @@ header {
         width: auto;
     }
 
+    .wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
 }
 
 nav {
@@ -98,8 +106,8 @@ nav {
         list-style-type: none;
 
         li {
-            padding: 1rem;
-            font-size: 15px;
+            padding: 0.5rem;
+            font-size: 10px;
         }
     }
 }

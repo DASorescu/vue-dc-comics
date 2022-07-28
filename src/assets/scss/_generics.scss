@@ -11,3 +11,13 @@ a {
     text-decoration: none;
     color: black;
 }
+
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
