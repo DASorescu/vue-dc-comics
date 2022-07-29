@@ -79,7 +79,8 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    height: 15%;
+
+    height: 10%;
     background-color: #fff;
     padding: 1rem;
 
@@ -103,6 +104,7 @@ nav {
 
     ul {
         display: flex;
+        justify-content: space-between;
         list-style-type: none;
 
         li {
