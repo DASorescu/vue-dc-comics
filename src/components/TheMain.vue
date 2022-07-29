@@ -132,8 +132,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {}
-
 .container {
     height: 100%;
 }
@@ -181,6 +179,7 @@ main {}
             margin-top: 0%;
             padding-left: 0%;
             justify-content: space-between;
+            margin-bottom: 0%;
         }
     }
 }

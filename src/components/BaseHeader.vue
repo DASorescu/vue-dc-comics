@@ -82,11 +82,11 @@ header {
 
     height: 10%;
     background-color: #fff;
-    padding: 1rem;
+
 
     img {
         padding: 1rem;
-        max-height: 100%;
+        height: 50px;
         width: auto;
     }
 
