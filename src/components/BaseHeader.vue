@@ -4,7 +4,8 @@
             <img src="../assets/img/dc-logo.png" alt="DC">
             <nav>
                 <ul>
-                    <li v-for="(object, index) in this.navmenu" :key="index"><a :href="object.url">{{ object.text }}</a>
+                    <li v-for="(object, index) in this.navmenu" :key="index"><a :href="object.url"
+                            :class="{ active: object.current }">{{ object.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -100,17 +101,24 @@ header {
 }
 
 nav {
+    height: 100%;
     width: 60%;
 
     ul {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         list-style-type: none;
+        margin: 0%;
 
         li {
             padding: 0.5rem;
             font-size: 10px;
         }
+    }
+
+    .active {
+        border-bottom: 2px solid #0082F9;
     }
 }
 </style>
