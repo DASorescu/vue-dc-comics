@@ -3,6 +3,7 @@
         <TheJumbo />
         <!-- content section -->
         <section class="content-section">
+            <button class="current-series">CURENT SERIES</button>
             <div class="container">
                 <div class="content">
                     <ul class="comic-cards-section">
@@ -140,6 +141,22 @@ export default {
     background-color: #1C1C1C;
     height: 50%;
     padding: 1rem 2rem;
+    position: relative;
+
+    .current-series {
+        background-color: #0082F9;
+        color: #fff;
+        padding: 5px 10px;
+        height: 35px;
+        width: 150px;
+        border-width: 0;
+        border-style: none;
+        border: 1px solid #0082F9;
+        border-image: none;
+        position: absolute;
+        left: 20%;
+        top: -18px;
+    }
 
     .button-section {
         display: flex;
@@ -148,7 +165,7 @@ export default {
         button {
             background-color: #0082F9;
             color: #fff;
-            height: 50px;
+            height: 40px;
             width: 200px;
             border-width: 0;
             border-style: none;
